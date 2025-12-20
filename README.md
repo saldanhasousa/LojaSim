@@ -1,0 +1,2 @@
+# LojaSim
+Virtual
