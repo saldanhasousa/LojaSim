@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "nome": "Notebook LENOVO",
+    "preco": 350000,
+    "imagem": "https://t.ctcdn.com.br/ZnGS2zbx5yT-Ht6u-hmcRON7D24=/fit-in/600x600/filters:fill(transparent):watermark(wm/prd.png,-32p,center,1,none,15)/i527053.png",
+    "descricao": "Notebook rápido e moderno"
+  },
+  
+  {
+    "id": 2,
+    "nome": "Notebook LENOVO",
+    "preco": 350000,
+    "imagem": "https://t.ctcdn.com.br/ZnGS2zbx5yT-Ht6u-hmcRON7D24=/fit-in/600x600/filters:fill(transparent):watermark(wm/prd.png,-32p,center,1,none,15)/i527053.png",
+    "descricao": "Notebook rápido e moderno"
+  },
+    {
+        "id": 3,
+        "nome": "Notebook LENOVO",
+        "preco": 350000,
+        "imagem": "https://t.ctcdn.com.br/ZnGS2zbx5yT-Ht6u-hmcRON7D24=/fit-in/600x600/filters:fill(transparent):watermark(wm/prd.png,-32p,center,1,none,15)/i527053.png",
+        "descricao": "Notebook rápido e moderno"
+    },
+    {
+        "id": 4,
+        "nome": "Notebook LENOVO",
+        "preco": 350000,
+        "imagem": "https://t.ctcdn.com.br/ZnGS2zbx5yT-Ht6u-hmcRON7D24=/fit-in/600x600/filters:fill(transparent):watermark(wm/prd.png,-32p,center,1,none,15)/i527053.png",
+        "descricao": "Notebook rápido e moderno"
+    }
+]
