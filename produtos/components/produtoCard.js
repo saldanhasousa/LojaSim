@@ -1,5 +1,6 @@
 export function criarProdutoCard(produto) {
   return `
+   
     <div class="card">
       <img src="${produto.imagem}" alt="${produto.nome}">
       <div class="card-body">

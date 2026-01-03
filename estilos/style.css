@@ -1,42 +1,53 @@
 /* Custom CSS */
-        .product-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-        }
-        .cart-item-enter {
-            opacity: 0;
-            transform: translateX(-20px);
-        }
-        .cart-item-enter-active {
-            opacity: 1;
-            transform: translateX(0);
-            transition: all 300ms ease-in;
-        }
-        .cart-item-exit {
-            opacity: 1;
-        }
-        .cart-item-exit-active {
-            opacity: 0;
-            transform: translateX(20px);
-            transition: all 300ms ease-in;
-        }
-        .hero-gradient {
-            background: linear-gradient(135deg, #6e8efb, #a777e3);
-            
-        }
-        .discount-badge {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background-color: #ef4444;
-            color: white;
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-size: 12px;
-            font-weight: bold;
-        }
-        .iframe {
-            display:flex;
-            position: relative;
-        }
-        
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item-enter {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+.cart-item-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 300ms ease-in;
+}
+
+.cart-item-exit {
+    opacity: 1;
+}
+
+.cart-item-exit-active {
+    opacity: 0;
+    transform: translateX(20px);
+    transition: all 300ms ease-in;
+}
+
+.hero-gradient {
+    height: 500px;
+    background-image: url(https://www.edivaldobrito.com.br/wp-content/uploads/2025/04/apple-revelara-mais-de-15-novos-produtos-ainda-este-ano.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+
+}
+
+.discount-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ef4444;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.iframe {
+    display: flex;
+    position: relative;
+}

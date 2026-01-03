@@ -16,7 +16,7 @@ h1 {
   text-align: center;
 }
 
-.produtos, .acessorios, .desktop {
+.produtos, .acessorios, .desktop, .audio, .todosProdutos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
@@ -33,7 +33,8 @@ h1 {
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px);
+  cursor: pointer;
 }
 
 .card img {
