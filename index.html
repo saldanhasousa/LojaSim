@@ -21,8 +21,7 @@
 
             <div class="hidden md:flex items-center space-x-6">
                 <a href="#" class="text-gray-700 hover:text-purple-600 font-medium">Início</a>
-                <a href="produtos/todosProdutos.html"
-                    class="text-gray-700 hover:text-purple-600 font-medium">Produtos</a>
+                <a href="#products" class="text-gray-700 hover:text-purple-600 font-medium">Produtos</a>
                 <a href="#categories" class="text-gray-700 hover:text-purple-600 font-medium">Categorias</a>
                 <a href="#about" class="text-gray-700 hover:text-purple-600 font-medium">Sobre</a>
                 <a href="#contact" class="text-gray-700 hover:text-purple-600 font-medium">Contato</a>
@@ -46,7 +45,7 @@
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
             <div class="container mx-auto px-4 py-2 flex flex-col space-y-2">
                 <a href="#" class="py-2 text-gray-700 hover:text-purple-600">Início</a>
-                <a href="produtos/todosProdutos.html" class="py-2 text-gray-700 hover:text-purple-600">Produtos</a>
+                <a href="#products" class="py-2 text-gray-700 hover:text-purple-600">Produtos</a>
                 <a href="#categories" class="py-2 text-gray-700 hover:text-purple-600">Categorias</a>
                 <a href="#about" class="py-2 text-gray-700 hover:text-purple-600">Sobre</a>
                 <a href="#contact" class="py-2 text-gray-700 hover:text-purple-600">Contato</a>
@@ -68,14 +67,14 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="hero" class="hero-gradient text-white py-16">
-        <div class="container  px-4 flex flex-col md:flex-row text-center items-end justify-center">
-            <div class=" mb-8 md:mb-0">
-                <h2 class="text-[4rem] font-bold mb-4 text-[#590b81] ">Os Melhores Produtos de Informática</h2>
-                <p class="text-2xl mb-6">Encontre tudo o que precisa para seu setup, trabalho ou estudos com os melhores
+    <section class="hero-gradient text-white py-16">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <h2 class="text-4xl font-bold mb-4">Os Melhores Produtos de Informática</h2>
+                <p class="text-lg mb-6">Encontre tudo o que precisa para seu setup, trabalho ou estudos com os melhores
                     preços do mercado.</p>
-                <div class="flex gap-2.5 justify-center">
-                    <a href="produtos/todosProdutos.html"
+                <div class="flex space-x-4">
+                    <a href="#products"
                         class="bg-[#0a2fa8] text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-purple-600 transition">Comprar
                         Agora</a>
                     <a href="#categories"
@@ -83,7 +82,10 @@
                         Categorias</a>
                 </div>
             </div>
-
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                    alt="Produtos de informática" class="rounded-lg shadow-xl max-w-md w-full">
+            </div>
         </div>
     </section>
 
@@ -121,7 +123,7 @@
                     <p class="text-sm text-gray-500 mt-1">120+ produtos</p>
                 </a>
 
-                <a href="produtos/audio/audio.html"
+                <a href="#"
                     class="category-card bg-gray-200 rounded-lg p-6 text-center hover:shadow-lg shadow-black/50 transition">
                     <div class="bg-yellow-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
                         <i class="fas fa-headphones text-yellow-600 text-2xl"></i>
@@ -135,7 +137,7 @@
 
 
     <!-- Products Section -->
-    <section id="products" class="py-12 bg-black/40">
+    <section id="products" class="py-12 bg-gray-50">
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-center mb-8">
                 <h2 class="text-3xl font-bold text-gray-800">Produtos em Destaque</h2>
@@ -158,6 +160,7 @@
             </div>
         </div>
     </section>
+
 
     <!-- Special Offer Banner -->
     <section class="py-12 bg-gradient-to-r from-purple-500 to-indigo-600 text-white">
@@ -192,7 +195,7 @@
             <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">O Que Nossos Clientes Dizem</h2>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-black/45 p-6 rounded-lg">
+                <div class="bg-gray-50 p-6 rounded-lg">
                     <div class="flex items-center mb-4">
                         <div class="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center mr-4">
                             <i class="fas fa-user text-purple-600"></i>
@@ -208,11 +211,11 @@
                             </div>
                         </div>
                     </div>
-                    <p class="text-white">"Comprei um notebook para meus estudos e chegou antes do prazo. O produto é
+                    <p class="text-gray-600">"Comprei um notebook para meus estudos e chegou antes do prazo. O produto é
                         excelente e o atendimento foi impecável!"</p>
                 </div>
 
-                <div class="bg-black/45 p-6 rounded-lg">
+                <div class="bg-gray-50 p-6 rounded-lg">
                     <div class="flex items-center mb-4">
                         <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
                             <i class="fas fa-user text-blue-600"></i>
@@ -228,11 +231,11 @@
                             </div>
                         </div>
                     </div>
-                    <p class="text-white">"Adquiri todos os componentes para montar meu PC gamer e tudo veio
+                    <p class="text-gray-600">"Adquiri todos os componentes para montar meu PC gamer e tudo veio
                         perfeito. A TechHub tem os melhores preços!"</p>
                 </div>
 
-                <div class="bg-black/45 p-6 rounded-lg">
+                <div class="bg-gray-50 p-6 rounded-lg">
                     <div class="flex items-center mb-4">
                         <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center mr-4">
                             <i class="fas fa-user text-green-600"></i>
@@ -248,7 +251,7 @@
                             </div>
                         </div>
                     </div>
-                    <p class="text-white">"Ótimo atendimento pós-venda. Tive um problema com meu monitor e resolveram
+                    <p class="text-gray-600">"Ótimo atendimento pós-venda. Tive um problema com meu monitor e resolveram
                         rapidamente. Recomendo a loja!"</p>
                 </div>
             </div>
@@ -257,10 +260,10 @@
 
 
     <!-- Newsletter -->
-    <section class="py-12 bg-black/45">
+    <section class="py-12 bg-gray-50">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-4 text-white">Receba Nossas Ofertas</h2>
-            <p class="text-lg mb-6 text-white max-w-2xl mx-auto">Assine nossa newsletter e receba as melhores
+            <h2 class="text-3xl font-bold mb-4 text-gray-800">Receba Nossas Ofertas</h2>
+            <p class="text-lg mb-6 text-gray-600 max-w-2xl mx-auto">Assine nossa newsletter e receba as melhores
                 promoções e novidades diretamente no seu e-mail.</p>
 
             <div class="max-w-md mx-auto flex">
@@ -271,6 +274,8 @@
             </div>
         </div>
     </section>
+
+
 
     <!-- Shopping Cart Sidebar -->
     <div id="cart-sidebar"
@@ -319,11 +324,8 @@
     </div>
     <div id="cart-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden"></div>
 
-
-
-
     <!-- Product Modal -->
-    <div id="product-modal" class="fixed inset-0 z-50 flex items-center justify-center hidden ">
+    <div id="product-modal" class="fixed inset-0 z-50 flex items-center justify-center hidden">
         <div class="absolute inset-0 bg-black bg-opacity-50"></div>
         <div class="bg-white rounded-lg max-w-4xl w-full mx-4 max-h-[90vh] overflow-y-auto relative z-10">
             <button id="close-modal" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700">
@@ -377,94 +379,113 @@
                             <div class="flex items-center border rounded-lg mr-4">
                                 <button class="px-3 py-2 text-gray-600 hover:text-purple-600">
                                     <i class="fas fa-minus"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div>
-                    <div class="flex items-center space-x-2 mb-4">
-                        <i class="fas fa-laptop-code text-2xl text-purple-400"></i>
-                        <h3 class="text-xl font-bold">INSTIC TechHub</h3>
-                    </div>
-                    <p class="text-gray-400">A melhor loja de produtos de informática com os melhores preços e
-                        atendimento.</p>
-                    <div class="flex space-x-4 mt-4">
-                        <a href="https://www.facebook.com/?__mmr=1&_rdr" class="text-gray-400 hover:text-white"><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a href="https://twitter.com.br/x/criar-conta-x-twitter/"
-                            class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/" class="text-gray-400 hover:text-white"><i
-                                class="fab fa-instagram"></i></a>
-                        <a href="https://www.youtube.com/watch?v=y8ySPbn_t2Y" class="text-gray-400 hover:text-white"><i
-                                class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
 
-                <div>
-                    <h4 class="text-lg font-medium mb-4">Links Rápidos</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white">Início</a></li>
-                        <li><a href="#products" class="text-gray-400 hover:text-white">Produtos</a></li>
-                        <li><a href="#categories" class="text-gray-400 hover:text-white">Categorias</a></li>
-                        <li><a href="#about" class="text-gray-400 hover:text-white">Sobre Nós</a></li>
-                        <li><a href="#contact" class="text-gray-400 hover:text-white">Contato</a></li>
-                    </ul>
-                </div>
+                                    <!-- Footer -->
+                                    <footer class="bg-gray-800 text-white py-12">
+                                        <div class="container mx-auto px-4">
+                                            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                                                <div>
+                                                    <div class="flex items-center space-x-2 mb-4">
+                                                        <i class="fas fa-laptop-code text-2xl text-purple-400"></i>
+                                                        <h3 class="text-xl font-bold">INSTIC TechHub</h3>
+                                                    </div>
+                                                    <p class="text-gray-400">A melhor loja de produtos de informática
+                                                        com os melhores preços e atendimento.
+                                                    </p>
+                                                    <div class="flex space-x-4 mt-4">
+                                                        <a href="#" class="text-gray-400 hover:text-white"><i
+                                                                class="fab fa-facebook-f"></i></a>
+                                                        <a href="#" class="text-gray-400 hover:text-white"><i
+                                                                class="fab fa-twitter"></i></a>
+                                                        <a href="#" class="text-gray-400 hover:text-white"><i
+                                                                class="fab fa-instagram"></i></a>
+                                                        <a href="#" class="text-gray-400 hover:text-white"><i
+                                                                class="fab fa-youtube"></i></a>
+                                                    </div>
+                                                </div>
 
-                <div>
-                    <h4 class="text-lg font-medium mb-4">Categorias</h4>
-                    <ul class="space-y-2">
-                        <li><a href="produtos/notebook/notebook.html"
-                                class="text-gray-400 hover:text-white">Notebooks</a></li>
-                        <li><a href="produtos/desktop/desktop.html" class="text-gray-400 hover:text-white">Desktops</a>
-                        </li>
-                        <li><a href="produtos/acessorios/acessorios.html" class="text-gray-400 hover:text-white">Acessórios</a></li>
-                        <li><a href="produtos/audio/audio.html" class="text-gray-400 hover:text-white">Audio</a></li>
-                    </ul>
-                </div>
-                <div id="contact">
-                    <h4 class="text-lg font-medium mb-4">Contato</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li class="flex items-start">
-                            <i class="fas fa-map-marker-alt mt-1 mr-2 text-purple-400"></i>
-                            <span>Bairro dos CTTs km 7, Luanda 10 km</span>
-                        </li>
+                                                <div>
+                                                    <h4 class="text-lg font-medium mb-4">Links Rápidos</h4>
+                                                    <ul class="space-y-2">
+                                                        <li><a href="#"
+                                                                class="text-gray-400 hover:text-white">Início</a></li>
+                                                        <li><a href="#products"
+                                                                class="text-gray-400 hover:text-white">Produtos</a></li>
+                                                        <li><a href="#categories"
+                                                                class="text-gray-400 hover:text-white">Categorias</a>
+                                                        </li>
+                                                        <li><a href="#about"
+                                                                class="text-gray-400 hover:text-white">Sobre Nós</a>
+                                                        </li>
+                                                        <li><a href="#contact"
+                                                                class="text-gray-400 hover:text-white">Contato</a></li>
+                                                    </ul>
+                                                </div>
 
-                        <p>
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3942.6384825491837!2d13.265111474127776!3d-8.819991891233183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a51f17fed169ca9%3A0xb8161f7378911028!2sInstituto%20de%20Tecnologia%20de%20Informa%C3%A7%C3%A3o%20e%20Comunica%C3%A7%C3%A3o%20-%20INSTIC!5e0!3m2!1spt-PT!2sao!4v1766260046727!5m2!1spt-PT!2sao"
-                                width="300" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </p>
-                        <li class="flex items-center">
-                            <i class="fas fa-phone-alt mr-2 text-purple-400"></i>
-                            <span>(+244) 957 937 711</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-envelope mr-2 text-purple-400"></i>
-                            <span>contato@instictechhub.com.ao</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-clock mr-2 text-purple-400"></i>
-                            <span>Seg-Sex: 08h-15h | Sáb: 08h-12h</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+                                                <div>
+                                                    <h4 class="text-lg font-medium mb-4">Categorias</h4>
+                                                    <ul class="space-y-2">
+                                                        <li><a href="#"
+                                                                class="text-gray-400 hover:text-white">Notebooks</a>
+                                                        </li>
+                                                        <li><a href="#"
+                                                                class="text-gray-400 hover:text-white">Desktops</a></li>
+                                                        <li><a href="#"
+                                                                class="text-gray-400 hover:text-white">Periféricos</a>
+                                                        </li>
+                                                        <li><a href="#"
+                                                                class="text-gray-400 hover:text-white">Componentes</a>
+                                                        </li>
+                                                        <li><a href="#"
+                                                                class="text-gray-400 hover:text-white">Acessórios</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div id="contact">
+                                                    <h4 class="text-lg font-medium mb-4">Contato</h4>
+                                                    <ul class="space-y-2 text-gray-400">
+                                                        <li class="flex items-start">
+                                                            <i
+                                                                class="fas fa-map-marker-alt mt-1 mr-2 text-purple-400"></i>
+                                                            <span>Bairro dos CTTs km 7, Luanda 10 km</span>
+                                                        </li>
 
-            <div class="border-t border-gray-700 mt-10 pt-6 text-center text-gray-400">
-                <p>&copy; 2023 INSTIC TechHub. Todos os direitos reservados.</p>
-            </div>
-        </div>
-    </footer>
+                                                        <p>
+                                                            <iframe
+                                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3942.6384825491837!2d13.265111474127776!3d-8.819991891233183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a51f17fed169ca9%3A0xb8161f7378911028!2sInstituto%20de%20Tecnologia%20de%20Informa%C3%A7%C3%A3o%20e%20Comunica%C3%A7%C3%A3o%20-%20INSTIC!5e0!3m2!1spt-PT!2sao!4v1766260046727!5m2!1spt-PT!2sao"
+                                                                width="600" height="450" style="border:0;"
+                                                                allowfullscreen="" loading="lazy"
+                                                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                                        </p>
+                                                        <li class="flex items-center">
+                                                            <i class="fas fa-phone-alt mr-2 text-purple-400"></i>
+                                                            <span>(+244) 957 937 711</span>
+                                                        </li>
+                                                        <li class="flex items-center">
+                                                            <i class="fas fa-envelope mr-2 text-purple-400"></i>
+                                                            <span>contato@instictechhub.com.ao</span>
+                                                        </li>
+                                                        <li class="flex items-center">
+                                                            <i class="fas fa-clock mr-2 text-purple-400"></i>
+                                                            <span>Seg-Sex: 08h-15h | Sáb: 08h-12h</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <div class="border-t border-gray-700 mt-10 pt-6 text-center text-gray-400">
+                                                <p>&copy; 2023 INSTIC TechHub. Todos os direitos reservados.</p>
+                                            </div>
+                                        </div>
+                                    </footer>
+
+
+                                    <script src="script/time.js">
+
+                                    </script>
+
+
 
 </body>
 
