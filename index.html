@@ -25,7 +25,7 @@
                     class="text-gray-700 hover:text-purple-600 font-medium">Produtos</a>
                 <a href="#categories" class="text-gray-700 hover:text-purple-600 font-medium">Categorias</a>
                 <a href="#about" class="text-gray-700 hover:text-purple-600 font-medium">Sobre</a>
-                <a href="#contact" class="text-gray-700 hover:text-purple-600 font-medium">Contato</a>
+                <a href="produtos/checkout.html" class="text-gray-700 hover:text-purple-600 font-medium">Contato</a>
             </div>
 
             <div class="flex items-center space-x-4">
@@ -71,16 +71,13 @@
     <section id="hero" class="hero-gradient text-white py-16">
         <div class="container  px-4 flex flex-col md:flex-row text-center items-end justify-center">
             <div class=" mb-8 md:mb-0">
-                <h2 class="text-[4rem] font-bold mb-4 text-[#590b81] ">Os Melhores Produtos de Informática</h2>
-                <p class="text-2xl mb-6">Encontre tudo o que precisa para seu setup, trabalho ou estudos com os melhores
-                    preços do mercado.</p>
+                <h2 class="h2_hero font-bold mb-4 ">Os Melhores Produtos de Informática</h2>
+                
                 <div class="flex gap-2.5 justify-center">
                     <a href="produtos/todosProdutos.html"
-                        class="bg-[#0a2fa8] text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-purple-600 transition">Comprar
+                        class="bg-[#99a0b6] text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-purple-600 transition">Comprar
                         Agora</a>
-                    <a href="#categories"
-                        class="border border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-purple-600 transition">Ver
-                        Categorias</a>
+                    
                 </div>
             </div>
 
@@ -91,7 +88,7 @@
     <!-- Featured Categories -->
     <section id="categories" class="py-12 bg-white">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Categorias em Destaque</h2>
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Categorias</h2>
 
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
                 <a href="./produtos/notebook/notebook.html"
@@ -137,26 +134,101 @@
     <!-- Products Section -->
     <section id="products" class="py-12 bg-black/40">
         <div class="container mx-auto px-4">
-            <div class="flex justify-between items-center mb-8">
-                <h2 class="text-3xl font-bold text-gray-800">Produtos em Destaque</h2>
-                <div class="flex space-x-2">
-                    <button class="px-4 py-2 bg-blue-100 border rounded-lg hover:bg-gray-100">Todos</button>
-                    <button class="px-4 py-2 bg-blue-100 border rounded-lg hover:bg-gray-100">Promoções</button>
-                    <button class="px-4 py-2 bg-blue-100 border rounded-lg hover:bg-gray-100">Mais Vendidos</button>
+            
+                <h2 class="text-3xl font-bold text-white">Produtos em Destaque</h2>
+
+
+        <div class="container_carrossel">
+
+
+            <div class="container_items flex *:shrink-0  justify-evenly *:w-72 py-2.5 gap-2.5">
+
+                <!-- Items do container_carrossel -->
+
+                
+                <div class="card ">
+                    <img src="https://phonesstorekenya.com/wp-content/uploads/2021/04/Tecno-Spark-7-a.jpg" alt="Tecno Camon">
+                    <div class="card-body">
+                        <h3>Tecno Camon</h3>
+                        <p>Notebook rápido e moderno</p>
+                        <span class="preco">350000 Kz</span>
+                        <div class="cont_botoes flex justify-center">
+                            <button class="btn-adicionar">Adicionar</button>
+                            <button onclick="window.location.href='produtos/checkout.html'" class="btn-comprar">Comprar</button>
+                        </div>
+                    </div>
                 </div>
+                <div class="card">
+                    <img src="https://isolutions.pt/6393-large_default/iphone-15-pro-256gb-titanio-branco-novo-selado-em-caixa.jpg" alt="Celular Iphone 15">
+                    <div class="card-body">
+                        <h3>Celular Iphone 15</h3>
+                        <p>Excelente câmera</p>
+                        <span class="preco">280000</span>
+                        <div class="cont_botoes flex justify-center">
+                            <button class="btn-adicionar">Adicionar</button>
+                            <button onclick="window.location.href='produtos/checkout.html'" class="btn-comprar">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://www.lores.com.br/product_images/m/510/11946__31601_std.jpg" alt="Fones de Ouvido Bluetooth">
+                    <div class="card-body">
+                        <h3>Fones de Ouvido Bluetooth</h3>
+                        <p>Fones sem fio que se conecta via Bluetooth e compatibilidade com smartphones</p>
+                        <span class="preco">350000</span>
+                        <div class="cont_botoes flex justify-center">
+                            <button class="btn-adicionar">Adicionar</button>
+                            <button onclick="window.location.href='produtos/checkout.html'" class="btn-comprar">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://audioprime.cdn.magazord.com.br/img/2023/11/blog/24922/melhor-caixa-de-som-portatil-bluetooth-em-2023-max-10.png" alt="Caixa de Som Portátil">
+                    <div class="card-body">
+                        <h3>Caixa de Som Portátil</h3>
+                        <p>Caixa de som compacta e leve, ideal para levar música para qualquer lugar.</p>
+                        <span class="preco">450000</span>
+                        <div class="cont_botoes flex justify-center">
+                            <button class="btn-adicionar">Adicionar</button>
+                            <button onclick="window.location.href='produtos/checkout.html'" class="btn-comprar">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://t.ctcdn.com.br/ZnGS2zbx5yT-Ht6u-hmcRON7D24=/fit-in/600x600/filters:fill(transparent):watermark(wm/prd.png,-32p,center,1,none,15)/i527053.png" alt="Notebook LENOVO">
+                    <div class="card-body">
+                        <h3>Notebook LENOVO</h3>
+                        <p>Notebook rápido leve e moderno</p>
+                        <span class="preco">350000</span>
+                        <div class="cont_botoes flex justify-center">
+                            <button class="btn-adicionar">Adicionar</button>
+                            <button onclick="window.location.href='produtos/checkout.html'" class="btn-comprar">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.fravega.com/f300/265e1d2cddbae14120dafba592bdce9f.jpg" alt="Notebook SANSUNG">
+                    <div class="card-body">
+                        <h3>Notebook SANSUNG</h3>
+                        <p>Excelente câmera</p>
+                        <span class="preco">280000</span>
+                        <div class="cont_botoes flex justify-center">
+                            <button class="btn-adicionar">Adicionar</button>
+                            <button onclick="window.location.href='produtos/checkout.html'" class="btn-comprar">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" id="products-grid">
-                <!-- Products will be loaded here by JavaScript -->
-            </div>
-
-            <div class="text-center mt-10">
-                <button
-                    class="px-6 py-3 bg-purple-600 text-white rounded-lg font-medium hover:bg-purple-700 transition">
-                    Carregar Mais Produtos
-                </button>
-            </div>
+            
         </div>
+          
+          
+
+        
+        
     </section>
 
     <!-- Special Offer Banner -->

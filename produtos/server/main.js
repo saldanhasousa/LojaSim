@@ -3,10 +3,13 @@ import { buscarAcessorios } from '../server/buscarAcessorios.js';
 import { criarProdutoCard } from '../components/produtoCard.js';
 import {buscarDesktop } from '../server/buscarDesktop.js';
 import {buscarAudio } from '../server/buscarAudio.js';
-
+import {buscarCarossel } from '../server/buscarCarossel.js';
 
 async function init() {
  
+
+  const carossel = await buscarCarossel();
+  console.log('Carrossel carregado:', carossel);
 
   const produtos = await buscarProdutos();
   console.log('Produtos carregados:', produtos);
@@ -25,11 +28,12 @@ async function init() {
   const containerProdutos = document.getElementById('produtos');
   const containerDesktop = document.getElementById('desktop');
   const containerAudio = document.getElementById('audio');
+  const containerCarossel = document.getElementById('carrossel');
   const elemento = document.createElement('h2');
   console.log('Container todosProdutos encontrado:', containerTodosProdutos);
 
   // Combinar todos os produtos em uma lista única
-  const todosProdutos = [...produtos, ...acessorios, ...desktop, ...audio];
+  const todosProdutos = [...produtos, ...acessorios, ...desktop, ...audio, ...carossel];
   console.log('Todos os produtos combinados:', todosProdutos);
 
   if (containerProdutos) {
@@ -53,6 +57,12 @@ async function init() {
       .map(criarProdutoCard)
       .join('');
     console.log('Container desktop preenchido');
+  }
+  if (containerCarossel) {
+    containerCarossel.innerHTML = carossel
+      .map(criarProdutoCard)
+      .join('');
+    console.log('Container carrossel preenchido');
   }
 
   if (containerAudio) {
